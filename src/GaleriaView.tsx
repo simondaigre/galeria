@@ -380,6 +380,9 @@ const Galeria: typeof Native = Object.assign(Root, {
   Image,
   Item: Image,
   Popup: () => null,
+  // iOS and Android only.
+  Overlay: () => null,
+  dismiss: async () => {},
 })
 
 export default Galeria
