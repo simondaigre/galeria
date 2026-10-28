@@ -230,9 +230,9 @@ Hide the page indicator dots when viewing multiple images.
 ```
 
 ### Custom Overlay
-*iOS & Android*
+*iOS, Android & Web*
 
-Render your own views over the image viewer while it's open, e.g. a close button, a caption or actions for the image shown (with `onIndexChange`). They fade in once the image is in place, and out when the viewer closes. A single tap on an image hides or shows them. Touches outside of your views still go to the images (swipe, zoom, drag to close). On iOS, the viewer's own close button isn't shown when there's an overlay.
+Render your own views over the image viewer while it's open, e.g. a close button, a caption or actions for the image shown (with `onIndexChange`). They fade in once the image is in place, and out when the viewer closes. Touches outside of your views still go to the viewer: on iOS and Android, swipe, zoom and drag to close, and a single tap hides or shows the overlay; on the web, a click closes the viewer. The viewer's own close button isn't shown when there's an overlay (iOS and web).
 
 `Galeria.dismiss()` closes the open viewer.
 
